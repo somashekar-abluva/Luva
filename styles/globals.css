@@ -12,6 +12,10 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .flexCenter {
@@ -36,42 +40,46 @@ body {
 
 /* My CSS */
 
-.layout {
-  @apply mx-auto flex flex-col;
+.header {
+  @apply bg-black h-14 border-b-2 border-gray-400 text-white;
 }
 
-.header{
-  @apply flex bg-black h-14 w-full border-b-2 border-gray-400 text-white;
+.headerlink {
+  @apply flex h-full;
 }
 
-.logoCss{
-  @apply p-1;
+.content {
+  @apply flex grow-[1];
 }
 
-.navLink{
-@apply flex gap-1 md:gap-5 pt-4 ml-4
+.mainPage {
+  @apply flex justify-center bg-black text-white w-full;
 }
 
-.avatarSection{
-  @apply pt-4 mr-4
+.leftSideBar {
+  @apply w-12 text-white bg-black  border-r-2 border-gray-400 left-0;
+}
+
+.rightSideBar {
+  @apply w-12 text-white bg-black  border-l-2 border-gray-400 right-0;
 }
 
 .footer {
-  @apply flex flex-row justify-center pt-2 h-10  text-white bg-black w-full border-t-2 border-gray-400;
+  @apply flex flex-row justify-center pt-2 bg-black h-14 text-white border-t-2 border-gray-400;
 }
 
-.leftSideBar{
-  @apply w-12 text-white bg-black  border-r-2 border-gray-400;
+.logoCss {
+  @apply p-1;
 }
 
-.rightSideBar{
-  @apply  w-12 float-right text-white bg-black  border-l-2 border-gray-400;
+.navLink {
+  @apply flex gap-1 md:gap-5 pt-4 ml-4;
 }
 
-.mainPage{
-  @apply grow-[1] bg-black w-full p-4;
+.avatarSection {
+  @apply pt-4 mr-4;
 }
 
-.avatar{
-  @apply inline-block h-6 w-6 rounded-full ring-2 ring-white
+.avatar {
+  @apply inline-block h-6 w-6 rounded-full ring-2 ring-white;
 }

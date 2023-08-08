@@ -1,14 +1,9 @@
 import React from "react";
-import { LeftMenu } from "./leftBar";
-import { MainPage } from "./main";
-import { RightMenu } from "./rightBar";
 
 function Home() {
     return (
-        <div className="flex overflow-hidden min-h-screen">
-            <LeftMenu />
-            <MainPage />
-            <RightMenu />
+        <div className="">
+           <h2>Main Page</h2>
         </div>
     );
 }

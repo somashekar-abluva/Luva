@@ -9,12 +9,12 @@ import { NavLinks } from '@/constant';
 export const Header = () => {
 
   return (
-    <div className='header'>
+    <div className='headerlink'>
 
       {/* company logo */}
       <Link href='/'>
         <Image
-          className='logoCss'
+          className='logoCss w-12 h-12'
           src='/luva.png'
           width={50}
           height={40}

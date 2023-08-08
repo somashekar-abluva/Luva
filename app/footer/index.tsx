@@ -1,11 +1,11 @@
 import React from 'react'
 
-export const Footer: React.FC = () => {
+export const Footer = () => {
 
     return (
-        <footer className="footer">
+        <footer className="">
             <div>
-            <h2>Copyright Abluva Inc 2023.</h2>
+                <h2>Copyright Abluva Inc 2023.</h2>
             </div>
         </footer>
     )
